@@ -1,0 +1,11 @@
+@Cacheable(value = "ticketsCache", key = "#ticketId")
+	- This is used for caching data into memory based on the key
+
+
+@CacheEvict(value = "ticketsCache", key = "#ticketId")
+	- This is used for deleting the cache from the memory based on the key
+
+
+@CachePut(value = "ticketsCache", key = "#ticketId")
+	- Update the cache based on the key. Make sure that method should return proper
+	  value because this value only updated in the cache based on key
