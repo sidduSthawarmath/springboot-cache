@@ -23,9 +23,9 @@ public class SpringBootCacheApp {
 		SpringApplication.run(SpringBootCacheApp.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public CacheManager cacheManager() {
 		return new ConcurrentMapCacheManager("ticketsCache");
-	}
+	}*/
 
 }

@@ -32,7 +32,7 @@ public class TicketService {
 
 	
 	//Stores into cache
-	@Cacheable(value = "ticketsCache", key = "#ticketId")
+	@Cacheable(value = "ticketsCache", key = "#ticketId", unless="#result==null")
 	public Ticket findTicketById(Integer ticketId) {
 		System.out.println("findTicketById method called");
 		Ticket ticket = ticketRepository.findOne(ticketId);
