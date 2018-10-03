@@ -34,8 +34,15 @@ Note to remember :
 			
 			if we want to disable cache entire class then we can use cache type as 'no'
 			spring.cache.type=no
-	
-	
-	  
+
+
+
+5. Dependencies needed
+ 		
+ 		<!-- Spring boot cache dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
 	  
 	  
